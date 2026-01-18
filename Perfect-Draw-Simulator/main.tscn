@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ien8h2mghsmj"]
+
+[ext_resource type="Texture2D" uid="uid://bhoxhtxefs7yt" path="res://Assets/Perfect-Draw-Backing.png" id="1_ig7tw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7dm0k"]
+size = Vector2(276, 413)
+
+[node name="Main" type="Node2D"]
+
+[node name="Card" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Card"]
+texture = ExtResource("1_ig7tw")
+
+[node name="Area2D" type="Area2D" parent="Card"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card/Area2D"]
+shape = SubResource("RectangleShape2D_7dm0k")
