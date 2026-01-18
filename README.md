@@ -9,3 +9,6 @@ Link to card creation tool: [https://doublesummon.itch.io/perfect-draw-card-crea
 
 There might be bugs and such in the future and I can not guarantee I am good enough at coding to maybe cause memory leaks or other crazy stuff. This meant as a passion project!
 This project will be coded using Godot, but feel free to branch and use other game engines.
+
+Tutorial Series I will be using for the basics: [https://www.youtube.com/playlist?list=PLNWIwxsLZ-LMYzxHlVb7v5Xo5KaUV7Tq1](url)
+Card Game Godot 4.3 Complete Tutorial! by Barry's Dev Hell
