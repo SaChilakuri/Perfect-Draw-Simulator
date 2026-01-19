@@ -1,12 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://ien8h2mghsmj"]
+[gd_scene load_steps=5 format=3 uid="uid://ien8h2mghsmj"]
 
 [ext_resource type="PackedScene" uid="uid://bt2e5n602i858" path="res://Scenes/card.tscn" id="1_bo1nx"]
 [ext_resource type="Script" uid="uid://ttx0uf2k2ck" path="res://Scripts/CardManager.gd" id="2_8gbba"]
+[ext_resource type="Script" uid="uid://btv7r6hb556se" path="res://Scripts/PlayerHand.gd" id="3_8gbba"]
+[ext_resource type="PackedScene" uid="uid://bd88t7k32o3dn" path="res://Scenes/deck.tscn" id="3_jjvhh"]
 
 [node name="Main" type="Node2D"]
 
-[node name="Card" parent="." instance=ExtResource("1_bo1nx")]
-position = Vector2(335, 309)
-
 [node name="CardManager" type="Node2D" parent="."]
 script = ExtResource("2_8gbba")
+
+[node name="PlayerHand" type="Node2D" parent="."]
+script = ExtResource("3_8gbba")
+
+[node name="Deck" parent="." instance=ExtResource("3_jjvhh")]
+position = Vector2(176, 833)
+
+[node name="Card" parent="." instance=ExtResource("1_bo1nx")]
+position = Vector2(1110, 715)

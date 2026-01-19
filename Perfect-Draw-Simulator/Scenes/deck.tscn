@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bd88t7k32o3dn"]
+
+[ext_resource type="Texture2D" uid="uid://bhoxhtxefs7yt" path="res://Assets/Perfect-Draw-Backing.png" id="1_ukesx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_io7pv"]
+size = Vector2(276, 414)
+
+[node name="Deck" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ukesx")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_io7pv")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -131.0
+offset_top = 144.0
+offset_right = -79.0
+offset_bottom = 200.0
